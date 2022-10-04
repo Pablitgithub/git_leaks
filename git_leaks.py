@@ -15,10 +15,20 @@ def extract(repo_dir):
     commits = list(repo.iter_commits('develop'))
     return commits
 
+def transform(commits: list, found: list=[]) -> list:
+    
+    for commit in commits:
+        s = re.findall(KEY_WORDS, commit.message, re.I)
 
-def load():
+        found.append([commit,s]) if s != [] else None 
 
-    time.sleep(1)
+    return found
+    ...
+ def load(found: list):
+  file = open('secrets.txt','w')
+  for secret in found: file.write(f'>> {secret[0].message}')
+  file.close(
+  time.sleep(1)
 
 
 if __name__ == '__main__':
