@@ -7,7 +7,7 @@ import time
 
 REPO_DIR = './skale/skale-manager'
 KEY_WORDS = ['credentials', 'password', 'key',
-             'new password', ]  # ,'password','username','key'
+             'new password','username']
 
 
 def extract(repo_dir):
