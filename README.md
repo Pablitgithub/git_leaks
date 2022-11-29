@@ -4,4 +4,6 @@ Con el el uso de la carpeta de skale dentro del zip, al ejecutar el programa dev
 username o credentials.  
 
 
-Además con el script git_leaks_to_json, convertimos todos esos commits a un archivo json
+Además con el script git_leaks_to_json, convertimos todos esos commits a un archivo json.
+
+Se deberán utilizar las librerías establecidas en el requirements.txt
